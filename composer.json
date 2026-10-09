@@ -1,0 +1,9 @@
+{
+  "name": "stackpros/freescout-mfsprint",
+  "description": "FreeScout module: print a conversation without internal notes, history or translations.",
+  "authors": [{ "name": "StackPros", "email": "support@managedfreescout.com" }],
+  "type": "library",
+  "require": { "php": ">=7.2" },
+  "extra": { "laravel": { "providers": ["Modules\\MFSPrint\\Providers\\MFSPrintServiceProvider"], "aliases": {} } },
+  "autoload": { "psr-4": { "Modules\\MFSPrint\\": "" } }
+}
