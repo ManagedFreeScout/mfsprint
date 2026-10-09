@@ -131,6 +131,8 @@ class MFSPrintServiceProvider extends ServiceProvider
                 'data-trigger'     => 'modal',
                 'data-modal-title' => __('Print'),
                 'data-modal-size'  => 'sm',
+                // The modal has its own Print / Cancel buttons; no second footer with Close.
+                'data-modal-no-footer' => 'true',
             ];
             return $actions;
         }, 20, 4);
@@ -188,7 +190,7 @@ class MFSPrintServiceProvider extends ServiceProvider
                 $left[] = __('translations');
             }
             if ($left) {
-                echo '<div class="mfsprint-left-out text-help">' . e(__('Printed without: :items.', ['items' => implode(', ', $left)])) . '</div>';
+                echo '<div class="mfsprint-left-out" style="padding: 4px 20px 10px; font-size: 12px; color: #72808e;">' . e(__('Printed without: :items.', ['items' => implode(', ', $left)])) . '</div>';
             }
         }, 20, 2);
     }

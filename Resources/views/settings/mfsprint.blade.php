@@ -22,11 +22,16 @@
                 <div class="panel-heading">{{ __('Print defaults') }}</div>
                 <div class="panel-body">
                     <p class="text-help">{{ __('Ticked here = ticked when an agent opens the print options. Agents can still change them each time.') }}</p>
-                    @foreach ([
-                        'exclude_notes'        => __('Leave out internal notes'),
-                        'exclude_history'      => __('Leave out history'),
-                        'exclude_translations' => __('Leave out translations (Ticket Translator)'),
-                    ] as $param => $label)
+                    @php
+                        $mfsprintDefaults = [
+                            'exclude_notes'   => __('Leave out internal notes'),
+                            'exclude_history' => __('Leave out history'),
+                        ];
+                        if (\Modules\MFSPrint\Providers\MFSPrintServiceProvider::translatorActive()) {
+                            $mfsprintDefaults['exclude_translations'] = __('Leave out translations (Ticket Translator)');
+                        }
+                    @endphp
+                    @foreach ($mfsprintDefaults as $param => $label)
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <div class="checkbox">
