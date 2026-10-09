@@ -5,7 +5,7 @@
 
 ## What MFS Print does
 
-MFS Print lets an agent print a FreeScout conversation without the parts a customer, a colleague or an auditor should not see. This manual covers version 1.0.0.
+MFS Print lets an agent print a FreeScout conversation without the parts a customer, a colleague or an auditor should not see. This manual covers version 1.0.1.
 
 | Leave out | What disappears from the printout |
 | --- | --- |
@@ -63,7 +63,7 @@ One licence works on one installation. Click **Deactivate licence** on the old i
 
 ## Printing a conversation
 
-Open the conversation, choose what to leave out, and print. FreeScout opens the printout in a new tab with your browser's print dialog.
+Open the conversation, choose what to leave out, and print. FreeScout opens the printout in a new tab with your browser's print dialog. In Microsoft Teams (with MFS Connect 1.9.2 or newer) the printout opens in a browser tab; sign in to FreeScout there if asked.
 
 1. In the conversation, open the **…** menu at the top and click **Print**.
 
@@ -92,7 +92,7 @@ An administrator can decide which boxes are already ticked when an agent opens t
 1. Go to **Manage → Settings → MFS Print**.
 2. Under **Print defaults**, tick what should be left out by default and click **Save**.
 
-![The MFS Print settings page with licence and print defaults](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/05-settings.png?v=22ab2517)
+![The MFS Print settings page with licence and print defaults](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/05-settings.png?v=d5bf2af1)
 
 Agents can still change the boxes each time they print. Print defaults appear once the licence is active; the translations default only when Ticket Translator is active.
 
@@ -117,4 +117,5 @@ Still stuck? Email support@managedfreescout.com.
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.0.1 | 9 Oct 2026 | The print options window closes after Print. With MFS Connect 1.9.2, Print in Microsoft Teams opens the printout in a browser tab. |
 | 1.0.0 | 9 Oct 2026 | First release of MFS Print: leave out internal notes, history and translations when printing; print defaults. Replaces the earlier Advanced Print module. |
