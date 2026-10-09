@@ -175,26 +175,5 @@ class MFSPrintServiceProvider extends ServiceProvider
 
             return $threads;
         });
-
-        // Print view only: say what was left out, so a printed copy is never mistaken for the full conversation.
-        \Eventy::addAction('conversation.after_subject_block', function ($conversation, $mailbox) {
-            $request = request();
-            if (!$request->input('print') || !LicenseService::isLicensed()) {
-                return;
-            }
-            $left = [];
-            if ($request->input('exclude_notes')) {
-                $left[] = __('internal notes');
-            }
-            if ($request->input('exclude_history')) {
-                $left[] = __('history');
-            }
-            if ($request->input('exclude_translations') && self::translatorActive()) {
-                $left[] = __('translations');
-            }
-            if ($left) {
-                echo '<div class="mfsprint-left-out" style="padding: 4px 20px 10px; font-size: 12px; color: #72808e;">' . e(__('Printed without: :items.', ['items' => implode(', ', $left)])) . '</div>';
-            }
-        }, 20, 2);
     }
 }

@@ -10,7 +10,7 @@ conversation's **Print** menu item opens a small window where the agent ticks wh
 - translations, when FreeScout's Ticket Translator module is active
 
 FreeScout's own print view then opens with those threads left out (filtered on the server, not hidden
-with CSS), and a line under the subject says what was left out.
+with CSS). The printout does not mention what was left out, so it can go to a customer as is.
 
 ## Requirements
 
@@ -47,7 +47,6 @@ the `mfsprint.zip` asset of the latest GitHub release).
 | --- | --- |
 | `conversation.get_action_buttons` | Points the Print menu item at the options modal (`GET /mfsprint/modal/{id}`) |
 | `conversation.view.threads` | On `?print=1`: drops notes / line items, empties `translations` in memory |
-| `conversation.after_subject_block` | On `?print=1`: "Printed without: ..." |
 | `settings.*`, `modules.*`, `schedule` | Settings page, licence on Manage → Modules, 6-hourly re-check |
 
 The modal route needs a logged-in user who may view the conversation (FreeScout's own `view` policy).
@@ -57,4 +56,4 @@ The print view itself is FreeScout's conversation page, with FreeScout's own acc
 
 | Version | Date | Changes |
 | --- | --- | --- |
-| 1.0.0 | 2026-10-09 | First MFS Print release, rebuilt from the former Advanced Print module (alias `advanced-print`): licence via the Managed FreeScout hub (no credentials in the module, no dependency on other modules); modal behind login + conversation access check; saved defaults now pre-tick the modal; no second print dialog; "Printed without" line on the printout. |
+| 1.0.0 | 2026-10-09 | First MFS Print release, rebuilt from the former Advanced Print module (alias `advanced-print`): licence via the Managed FreeScout hub (no credentials in the module, no dependency on other modules); modal behind login + conversation access check; saved defaults now pre-tick the modal; no second print dialog. |
