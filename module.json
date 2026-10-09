@@ -2,7 +2,7 @@
   "name": "MFS Print",
   "alias": "mfsprint",
   "description": "Print a conversation without internal notes, history or translations: choose what to leave out each time you print.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "StackPros",
   "authorUrl": "https://managedfreescout.com",
   "keywords": [
