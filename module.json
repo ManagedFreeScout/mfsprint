@@ -1,23 +1,27 @@
 {
-    "name": "MFS Print",
-    "alias": "mfsprint",
-    "description": "Print a conversation without internal notes, history or translations: choose what to leave out each time you print.",
-    "version": "1.0.0",
-    "author": "StackPros",
-    "authorUrl": "https://managedfreescout.com",
-    "keywords": ["print", "conversation", "notes"],
-    "active": 1,
-    "order": 0,
-    "providers": [
-        "Modules\\MFSPrint\\Providers\\MFSPrintServiceProvider"
-    ],
-    "aliases": {},
-    "files": [
-        "start.php"
-    ],
-    "img": "/modules/mfsprint/img/mfsprint-icon.png",
-    "requiredAppVersion": "1.8.236",
-    "requires": [],
-    "latestVersionUrl": "https://raw.githubusercontent.com/ManagedFreeScout/mfsprint/main/version.txt",
-    "latestVersionZipUrl": "https://github.com/ManagedFreeScout/mfsprint/releases/latest/download/mfsprint.zip"
+  "name": "MFS Print",
+  "alias": "mfsprint",
+  "description": "Print a conversation without internal notes, history or translations: choose what to leave out each time you print.",
+  "version": "1.0.0",
+  "author": "StackPros",
+  "authorUrl": "https://managedfreescout.com",
+  "keywords": [
+    "print",
+    "conversation",
+    "notes"
+  ],
+  "active": 1,
+  "order": 0,
+  "providers": [
+    "Modules\\MFSPrint\\Providers\\MFSPrintServiceProvider"
+  ],
+  "aliases": {},
+  "files": [
+    "start.php"
+  ],
+  "img": "/modules/mfsprint/img/mfsprint-icon.png",
+  "requiredAppVersion": "1.8.236",
+  "requires": [],
+  "latestVersionUrl": "https://raw.githubusercontent.com/ManagedFreeScout/mfsprint/main/version.txt",
+  "latestVersionZipUrl": "https://github.com/ManagedFreeScout/mfsprint/releases/latest/download/mfsprint.zip"
 }
