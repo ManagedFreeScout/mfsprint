@@ -106,7 +106,9 @@ class MFSPrintServiceProvider extends ServiceProvider
             return (isset($module['alias']) && $module['alias'] === self::MODULE_ALIAS) ? true : $requires;
         }, 20, 2);
 
-        \Eventy::addAction('schedule', function ($schedule) {
+        // FreeScout builds its schedule with Eventy::filter('schedule'): a filter that returns
+        // $schedule, not an action (an action never runs; MFSEssentials 1.3.1, card #305).
+        \Eventy::addFilter('schedule', function ($schedule) {
             $schedule->call(function () {
                 $service = app(LicenseService::class);
                 $status  = $service->getLicenseStatus();
@@ -114,6 +116,7 @@ class MFSPrintServiceProvider extends ServiceProvider
                     $service->validateLicense($status['license_key']);
                 }
             })->cron('0 */6 * * *');
+            return $schedule;
         }, 20, 1);
     }
 
