@@ -1,6 +1,6 @@
 # MFS Print
 
-**Version 1.0.0** · FreeScout module by [Managed FreeScout](https://managedfreescout.com) (StackPros)
+**Version 1.0.1** · FreeScout module by [Managed FreeScout](https://managedfreescout.com) (StackPros)
 
 Print a FreeScout conversation without the parts a customer, colleague or auditor should not see. The
 conversation's **Print** menu item opens a small window where the agent ticks what to leave out:
@@ -56,4 +56,5 @@ The print view itself is FreeScout's conversation page, with FreeScout's own acc
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.0.1 | 2026-10-09 | The print options window closes after Print (it stayed open behind the new tab, also in Teams). |
 | 1.0.0 | 2026-10-09 | First MFS Print release, rebuilt from the former Advanced Print module (alias `advanced-print`): licence via the Managed FreeScout hub (no credentials in the module, no dependency on other modules); modal behind login + conversation access check; saved defaults now pre-tick the modal; no second print dialog. |

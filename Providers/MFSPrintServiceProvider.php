@@ -31,6 +31,18 @@ class MFSPrintServiceProvider extends ServiceProvider
         $this->registerSettings();
         $this->registerLicenseHooks();
         $this->registerPrintHooks();
+        $this->registerAssets();
+    }
+
+    /** Small script that closes the options window once Print is clicked (licensed installs only). */
+    protected function registerAssets()
+    {
+        \Eventy::addFilter('javascripts', function ($items) {
+            if (LicenseService::isLicensed()) {
+                $items[] = \Module::getPublicPath(self::MODULE_ALIAS) . '/js/mfsprint.js';
+            }
+            return $items;
+        }, 20, 1);
     }
 
     public function register()
