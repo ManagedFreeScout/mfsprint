@@ -5,7 +5,7 @@
 
 ## What MFS Print does
 
-MFS Print lets an agent print a FreeScout conversation without the parts a customer, a colleague or an auditor should not see. This manual covers version 1.0.1.
+MFS Print lets an agent print a FreeScout conversation without the parts a customer, a colleague or an auditor should not see. This manual covers version 1.0.2.
 
 | Leave out | What disappears from the printout |
 | --- | --- |
@@ -79,7 +79,7 @@ Open the conversation, choose what to leave out, and print. FreeScout opens the 
 
 With nothing ticked, you get FreeScout's normal printout, including notes and history:
 
-![The full printout, with the internal note](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/04-printout-full.png?v=9b3abd57)
+![The full printout, with the internal note](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/04-printout-full.png?v=3979f42d)
 
 **Translations** appear as a third option only when FreeScout's Ticket Translator module is active. Leaving them out hides the automatic translations; the original messages stay.
 
@@ -92,7 +92,7 @@ An administrator can decide which boxes are already ticked when an agent opens t
 1. Go to **Manage → Settings → MFS Print**.
 2. Under **Print defaults**, tick what should be left out by default and click **Save**.
 
-![The MFS Print settings page with licence and print defaults](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/05-settings.png?v=d5bf2af1)
+![The MFS Print settings page with licence and print defaults](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/05-settings.png?v=7e2309f2)
 
 Agents can still change the boxes each time they print. Print defaults appear once the licence is active; the translations default only when Ticket Translator is active.
 
@@ -117,5 +117,6 @@ Still stuck? Email support@managedfreescout.com.
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.0.2 | 7 Nov 2026 | The module now includes its licence (AGPL-3.0) as a LICENSE file; new square module icon. No changes in how it works. |
 | 1.0.1 | 9 Oct 2026 | The print options window closes after Print. With MFS Connect 1.9.2, Print in Microsoft Teams opens the printout in a browser tab. |
 | 1.0.0 | 9 Oct 2026 | First release of MFS Print: leave out internal notes, history and translations when printing; print defaults. Replaces the earlier Advanced Print module. |
