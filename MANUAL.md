@@ -69,7 +69,7 @@ Open the conversation, choose what to leave out, and print. FreeScout opens the 
 
 ![The Print item in the conversation menu](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/01-print-menu.png?v=4914136a)
 
-2. Tick what to leave out of the printout and click **Print**. The boxes start as set by your administrator (see Print defaults); you can change them each time.
+2. Tick what to leave out of the printout and click **Print**. The boxes start as you ticked them the last time you printed in this browser; the first time (or in another browser) they start as set by your administrator (see Print defaults). You can change them each time.
 
 ![The print options window](https://managedfreescout.com/wp-content/uploads/manuals/mfsprint/02-print-options.png?v=2c6038b0)
 
@@ -117,6 +117,7 @@ Still stuck? Email support@managedfreescout.com.
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.0.3 | (not yet released) | The print options window remembers the boxes you ticked last time, per agent, in that browser. |
 | 1.0.2 | 7 Nov 2026 | The module now includes its licence (AGPL-3.0) as a LICENSE file; new square module icon. No changes in how it works. |
 | 1.0.1 | 9 Oct 2026 | The print options window closes after Print. With MFS Connect 1.9.2, Print in Microsoft Teams opens the printout in a browser tab. |
 | 1.0.0 | 9 Oct 2026 | First release of MFS Print: leave out internal notes, history and translations when printing; print defaults. Replaces the earlier Advanced Print module. |

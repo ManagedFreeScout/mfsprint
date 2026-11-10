@@ -1,4 +1,4 @@
-<form action="{{ $formAction }}" method="GET" target="_blank" class="mfsprint-form">
+<form action="{{ $formAction }}" method="GET" target="_blank" class="mfsprint-form" data-user-id="{{ auth()->id() }}">
     <input type="hidden" name="print" value="1">
     @if ($folderId)
         <input type="hidden" name="folder_id" value="{{ $folderId }}">

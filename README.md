@@ -9,6 +9,9 @@ conversation's **Print** menu item opens a small window where the agent ticks wh
 - history (status changes, assignments and other activity lines)
 - translations, when FreeScout's Ticket Translator module is active
 
+The window opens with the choices the agent made last time in that browser (stored in the browser,
+per agent); the first time, it shows the defaults from **Manage → Settings → MFS Print**.
+
 FreeScout's own print view then opens with those threads left out (filtered on the server, not hidden
 with CSS). The printout does not mention what was left out, so it can go to a customer as is.
 
@@ -56,6 +59,7 @@ The print view itself is FreeScout's conversation page, with FreeScout's own acc
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.0.3 | (unreleased) | The print window remembers each agent's last choices in that browser; without a remembered choice it shows the settings defaults. |
 | 1.0.2 | 2026-11-07 | The module includes its licence (AGPL-3.0) as a LICENSE file; new square module icon. No functional changes. |
 | 1.0.1 | 2026-10-09 | The print options window closes after Print (it stayed open behind the new tab, also in Teams). |
 | 1.0.0 | 2026-10-09 | First MFS Print release, rebuilt from the former Advanced Print module (alias `advanced-print`): licence via the Managed FreeScout hub (no credentials in the module, no dependency on other modules); modal behind login + conversation access check; saved defaults now pre-tick the modal; no second print dialog. |
