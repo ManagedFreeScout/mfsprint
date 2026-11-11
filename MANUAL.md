@@ -117,7 +117,7 @@ Still stuck? Email support@managedfreescout.com.
 
 | Version | Date | Changes |
 | --- | --- | --- |
-| 1.0.3 | (not yet released) | The print options window remembers the boxes you ticked last time, per agent, in that browser. The first time, it shows the print defaults. |
+| 1.0.3 | 11 Nov 2026 | The print options window remembers the boxes you ticked last time, per agent, in that browser. The first time, it shows the print defaults. |
 | 1.0.2 | 7 Nov 2026 | The module now includes its licence (AGPL-3.0) as a LICENSE file; new square module icon. No changes in how it works. |
 | 1.0.1 | 9 Oct 2026 | The print options window closes after Print. With MFS Connect 1.9.2, Print in Microsoft Teams opens the printout in a browser tab. |
 | 1.0.0 | 9 Oct 2026 | First release of MFS Print: leave out internal notes, history and translations when printing; print defaults. Replaces the earlier Advanced Print module. |
